@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <link rel="stylesheet" href="src/css/style.css" />
+        <script src="https://unpkg.com/alpinejs" defer></script>
+    <title>Acceuil</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__start">
+            <a href="/">
+                <img class="header__logo" src="/public/img/icone/Logo.svg" alt="Logo header">
+            </a>
+            <h3 class="header__nom">Siza Vieira</h3>
+        </div>
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen">
+                <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/">Billetterie</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/">Histoire de l’architecte</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/">Œuvre Marquante</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+    <main>
+        
+    </main>
 </body>
 </html>
