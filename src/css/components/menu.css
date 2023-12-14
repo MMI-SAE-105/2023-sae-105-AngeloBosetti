@@ -32,3 +32,24 @@
   height: 30px;
   position: relative;
 }
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+  content: "";
+  background-color: var(--gray-black);
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn__bar::before {
+  top: -10px;
+}
+.menu-btn__bar::after {
+  top: 10px;
+}
