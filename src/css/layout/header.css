@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(126, 160, 183, 1);
+  background-color: var(--bleu);
   position: fixed;
   top: 0;
   left: 0;
@@ -7,7 +7,6 @@
   padding: var(--space2x) var(--space3x);
   display: flex;
   justify-content: space-between;
-
 }
 
 .header__end {

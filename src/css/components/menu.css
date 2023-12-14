@@ -4,7 +4,7 @@
   position: fixed;
   inset: 0;
   background-color: var(--bleu);
-  font-size: var(--text-xl);
-  letter-spacing: var(--letter-spacing);
+  font-size: var(--menu--item);
   transition: all 0.4s ease-in-out;
 }
+
