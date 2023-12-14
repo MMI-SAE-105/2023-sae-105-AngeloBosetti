@@ -15,3 +15,7 @@
   gap: var(--space2x);
   align-items: center;
 }
+.header__logo .header__nom {
+  display: block;
+  
+}
