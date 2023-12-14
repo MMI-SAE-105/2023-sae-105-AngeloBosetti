@@ -8,3 +8,27 @@
   transition: all 0.4s ease-in-out;
 }
 
+.menu--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__list {
+  margin-top: 25vh;
+  margin-left: 15vw;
+}
+
+.menu__item {
+  margin-top: 15%;
+}
+
+.menu__link {
+  color: var(--gris);
+  text-decoration: none;
+}
+
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
