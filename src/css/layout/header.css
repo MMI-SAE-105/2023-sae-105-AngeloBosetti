@@ -10,3 +10,8 @@
 
 }
 
+.header__end {
+  display: flex;
+  gap: var(--space2x);
+  align-items: center;
+}
