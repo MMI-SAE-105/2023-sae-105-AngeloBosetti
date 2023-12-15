@@ -4,3 +4,44 @@
 *:after {
   box-sizing: border-box;
 }
+
+/* Les règles typographiques générales qui s'appliquent à tout le site */
+body {
+    font-family: var(--roboto--mono);
+    font-size: var(--body-1);
+}
+
+h1{
+    font-family: var(--inter);
+    font-size: var(--h1);
+}
+
+h2{
+    font-family: var(--josephin);
+    font-size: var(--h2);
+}
+
+h3{
+    font-family: var(--josephin);
+    line-height: 1.4
+}
+
+button {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Classes universelles */
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding-left: var(--space3x);
+  padding-right: var(--space3x);
+}
