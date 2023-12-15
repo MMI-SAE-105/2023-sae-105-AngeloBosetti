@@ -37,6 +37,8 @@ img {
 }
 .carrousel {
     position: relative;
+    margin-bottom: 10px;
+    
 }
   
 .carrousel_btn {

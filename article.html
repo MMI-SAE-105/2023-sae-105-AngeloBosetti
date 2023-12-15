@@ -82,6 +82,7 @@
             l'architecture
             à travers le monde.
         </p>
+        <h2>Voici une frise chrnologique de ses oeuvres</h2>
         <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
             <button @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant"
                 aria-label="slide précedant"><img class="carrousel_arrow" src="/public/img/icone/arrowLineLeft.svg"
@@ -93,32 +94,32 @@
                 @scroll.debounce.250ms.passive="hrefCourant='#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                 <div id="ecran-1" class="carrousel_ecran">
                     <figure>
-                        <img src="/public/img/Eglise_J.Morgado.webp" alt="image ecran 1">
-                        <figcaption>Eglise J.Morgado </figcaption>
+                        <img src="/public/img/Piscina_da_quinta.jpg" alt="image ecran 1">
+                        <figcaption>1958-1965 Piscine de Quinta da Conceição </figcaption>
                     </figure>
                 </div>
                 <div id="ecran-2" class="carrousel_ecran">
                     <figure>
-                        <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
-                        <figcaption>Ecran 2</figcaption>
+                        <img src="/public/img/Berlin_bonjour-tristesse.jpg" alt="image ecran 2">
+                        <figcaption>1981-1984 Bâtiment Bonjour Tristesse, à Berlin  </figcaption>
                     </figure>
                 </div>
                 <div id="ecran-3" class="carrousel_ecran">
                     <figure>
-                        <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
-                        <figcaption>Ecran 3</figcaption>
+                        <img src="/public/img/Faculdade_Arquitectura.jpg" alt="image ecran 3">
+                        <figcaption>1987-1993 Faculté d'Architecture de l'université de Porto</figcaption>
                     </figure>
                 </div>
                 <div id="ecran-4" class="carrousel_ecran">
                     <figure>
-                        <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
-                        <figcaption>Ecran 4</figcaption>
+                        <img src="/public/img/fondationjpg.jpg" alt="image ecran 4">
+                        <figcaption>2001-2008 Fondation Ibere Camargo de Porto Alegre, Brésil</figcaption>
                     </figure>
                 </div>
                 <div id="ecran-5" class="carrousel_ecran">
                     <figure>
-                        <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
-                        <figcaption>Ecran 5</figcaption>
+                        <img src="/public/img/Eglise_J.Morgado.webp" alt="image ecran 5">
+                        <figcaption>2015-2017 Église paroissiale Anastasis, Saint-Jacques-de-la-Lande, France</figcaption>
                     </figure>
                 </div>
             </div>

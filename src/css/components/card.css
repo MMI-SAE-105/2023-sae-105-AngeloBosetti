@@ -27,6 +27,7 @@
     font-weight: extra-bold;
     color: var(--noir);
     border: 1px solid var(--noir);
+    background-color: var(--bleu-clair);
     padding: 10px;
     gap: var(--space2x);
 
