@@ -35,3 +35,7 @@
     gap: var(--space2x);
 
 }
+
+.footer__span{
+    background-color: var(--noir);
+}

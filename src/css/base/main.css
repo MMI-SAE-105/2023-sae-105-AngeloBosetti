@@ -12,17 +12,23 @@ body {
     font-size: var(--body-1);
 }
 
+
+
 h1{
+    align-items: center;
     font-family: var(--inter);
     font-size: var(--h1);
 }
 
 h2{
+    align-items: center;
+    margin-left: 10px;
     font-family: var(--josephin);
     font-size: var(--h2);
 }
 
 h3{
+    margin-left: 10px;
     font-family: var(--josephin);
     line-height: 1.4
 }
@@ -37,6 +43,7 @@ button, a {
     cursor: pointer;
 }
 p {
+    margin-left: 12px;
     font-family: var(--Roboto Mono);
     font-size: var(--button);
 }
