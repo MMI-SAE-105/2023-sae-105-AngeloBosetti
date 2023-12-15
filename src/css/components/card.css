@@ -1,0 +1,4 @@
+.card {
+  margin-top: var(--space3x);
+  position: relative;
+}
