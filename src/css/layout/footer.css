@@ -36,6 +36,13 @@
 
 }
 
-.footer__span{
-    background-color: var(--noir);
+.footer__hr{
+    width:310px;
+    align-items: center;
+    border-bottom: 3px solid var(--noir);
+    color: var(--noir);
+}
+
+.footer__paragraphe{
+    margin: var(--space2x);
 }
