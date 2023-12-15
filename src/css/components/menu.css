@@ -6,6 +6,7 @@
   background-color: var(--bleu);
   font-size: var(--menu--item);
   transition: all 0.4s ease-in-out;
+  z-index: -1;
 }
 
 .menu--open {

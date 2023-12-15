@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__start">
@@ -74,51 +76,58 @@
             à travers le monde.
         </p>
         <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
-            <button @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><img class="carrousel_arrow" src="/public/img/icone/arrowLineLeft.svg" alt="arrow left"></button>
-                <button @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth"class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"> <img class="carrousel_arrow" src="/public/img/icone/arrowLineRight.svg" alt="arrow right"></button>
-                    <div class="carrousel_parent-ecrans" x-ref="parent"@scroll.debounce.250ms.passive="hrefCourant='#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                        <div id="ecran-1" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
-                                <figcaption>Ecran 1</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-2" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
-                                <figcaption>Ecran 2</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-3" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
-                                <figcaption>Ecran 3</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-4" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
-                                <figcaption>Ecran 4</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-5" class="carrousel_ecran">
-                            <figure>
-                                <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
-                                <figcaption>Ecran 5</figcaption>
-                            </figure>
-                        </div>
-                    </div>
+            <button @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant"
+                aria-label="slide précedant"><img class="carrousel_arrow" src="/public/img/icone/arrowLineLeft.svg"
+                    alt="arrow left"></button>
+            <button @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth" class="carrousel_btn carrousel_btn-apres"
+                aria-label="slide suivant"> <img class="carrousel_arrow" src="/public/img/icone/arrowLineRight.svg"
+                    alt="arrow right"></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="hrefCourant='#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
+                        <figcaption>Ecran 1</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
+                        <figcaption>Ecran 2</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
+                        <figcaption>Ecran 3</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
+                        <figcaption>Ecran 4</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
+                        <figcaption>Ecran 5</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
-        
+
     </main>
     <footer class="footer">
         <div class="footer__start ">
             <ul class="footer__list">
                 <li><a class="footer__btn" href="/contact.html">CONTACT</a></li>
                 <li><a class="footer__btn" href="/">BILLETTERIE</a></li>
+            </ul>
+            <ul class="footer__list">
                 <li><a class="footer__link"
-                        href="https://www.google.fr/maps/search/4+PI.+Lucien+Tharradin,+25200+Montb%C3%A9liard/@47.4954672,6.8017799,17z/data=!3m1!4b1?entry=ttu">4 Pl. Lucien Tharradin, 25200 Montbéliard</a>
-                </li>
+                        href="https://www.google.fr/maps/search/4+PI.+Lucien+Tharradin,+25200+Montb%C3%A9liard/@47.4954672,6.8017799,17z/data=!3m1!4b1?entry=ttu">Pl.
+                        Lucien Tharradin, 25200 Montbéliard</a></li>
                 <li>>03 81 99 47 34</li>
             </ul>
             <ul class="footer__social">
@@ -134,9 +143,11 @@
                 Montbéliard</p>
         </div>
         <div class="footer__end">
-            <a class="footer__link" href="http://formation.univ-fcomte.fr/but/metiers-du-multimedia-et-de-linternet"><img
+            <a class="footer__link"
+                href="http://formation.univ-fcomte.fr/but/metiers-du-multimedia-et-de-linternet"><img
                     class="footer__icon" src="/public/img/icone/MMI.svg" alt="logo MMi"></a>
         </div>
     </footer>
 </body>
+
 </html>

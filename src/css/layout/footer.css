@@ -1,6 +1,8 @@
 .footer{
+    position: relative;
+    display: flex;
     background-color: var(--bleu);
-    color: var(--noir);
     padding: 20px;
     
 }
+
