@@ -9,6 +9,12 @@
   justify-content: space-between;
 }
 
+.header__start {
+  display: flex;
+  gap: var(--space2x);
+  align-items: center;
+}
+
 .header__end {
   display: flex;
   gap: var(--space2x);
@@ -17,4 +23,8 @@
 .header__logo .header__nom {
   display: block;
   
+}
+
+.header__menu-btn {
+  decoration: none;
 }
