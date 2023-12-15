@@ -3,6 +3,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
+
 }
 
 /* Les règles typographiques générales qui s'appliquent à tout le site */
@@ -14,7 +15,6 @@ body {
 h1{
     font-family: var(--inter);
     font-size: var(--h1);
-
 }
 
 h2{

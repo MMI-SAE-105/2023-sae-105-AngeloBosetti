@@ -1,9 +1,7 @@
 .footer{
     position: relative;
     display: flex;
-    background-color: var(--bleu);
-
-    
+    background-color: var(--bleu);  
 }
 
 .footer__start{
