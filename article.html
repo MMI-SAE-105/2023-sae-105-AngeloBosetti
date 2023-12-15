@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{ menuIsOpen: false }">
 
 <head>
     <meta charset="UTF-8">
@@ -24,6 +24,13 @@
             </button>
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list">
+                    <li class="menu__item">
+                        <h1 class="menu__title">Information</h1>
+                    </li>
+                    <li class="menu__item">
+                        <hr class="menu__hr">
+                        </hr>
+                    </li>
                     <li class="menu__item">
                         <a class="menu__link" href="/">Billetterie</a>
                     </li>
@@ -86,8 +93,8 @@
                 @scroll.debounce.250ms.passive="hrefCourant='#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                 <div id="ecran-1" class="carrousel_ecran">
                     <figure>
-                        <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
-                        <figcaption>Ecran 1</figcaption>
+                        <img src="/public/img/Eglise_J.Morgado.webp" alt="image ecran 1">
+                        <figcaption>Eglise J.Morgado </figcaption>
                     </figure>
                 </div>
                 <div id="ecran-2" class="carrousel_ecran">
@@ -124,11 +131,11 @@
                 <li><a class="footer__btn" href="/contact.html">CONTACT</a></li>
                 <li><a class="footer__btn" href="/">BILLETTERIE</a></li>
             </ul>
-            <ul class="footer__list">
+            <ul class="footer__listinf">
                 <li><a class="footer__link"
-                        href="https://www.google.fr/maps/search/4+PI.+Lucien+Tharradin,+25200+Montb%C3%A9liard/@47.4954672,6.8017799,17z/data=!3m1!4b1?entry=ttu">Pl.
-                        Lucien Tharradin, 25200 Montbéliard</a></li>
-                <li>>03 81 99 47 34</li>
+                        href="https://www.google.fr/maps/search/4+PI.+Lucien+Tharradin,+25200+Montb%C3%A9liard/@47.4954672,6.8017799,17z/data=!3m1!4b1?entry=ttu">4
+                        Pl. Lucien Tharradin, 25200 Montbéliard</a></li>
+                <li>03 81 99 47 34</li>
             </ul>
             <ul class="footer__social">
                 <li><a class="footer__link" href="https://www.instagram.com/sizavieira/"><img class="footer__icon"
@@ -137,10 +144,12 @@
                             class="footer__icon" src="/public/img/icone/facebook.svg" alt="logo facebook"></a></li>
                 <li><a class="footer__link" href="https://www.youtube.com/@departementmmi4128"><img class="footer__icon"
                             src="/public/img/icone/youtube.svg" alt="logo yt"></a></li>
-                <li><a class="footer__link" href="http://formation.univ-fcomte.fr/but/metiers-du-multimedia-et-de-linternet"><img
-                                    class="footer__icon" src="/public/img/icone/MMI.svg" alt="logo MMi"></a></li>
+                <li><a class="footer__link"
+                        href="http://formation.univ-fcomte.fr/but/metiers-du-multimedia-et-de-linternet"><img
+                            class="footer__icon" src="/public/img/icone/MMI.svg" alt="logo MMi"></a></li>
             </ul>
-            <span class="footer__span"></span>
+            <hr class="footer__hr">
+            </hr>
             <p class="footer__paragraphe">projet réalisé dans le cadre d’un exercice pédagogique au département MMi de
                 Montbéliard</p>
         </div>

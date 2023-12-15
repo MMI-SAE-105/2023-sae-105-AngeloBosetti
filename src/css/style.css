@@ -19,7 +19,7 @@ ordre d'import :
 
 /* Base */
 @import "base/main.css";
-@import "base/media.css";
+@import url("base/media.css");
 
 /* Layout */
 @import "layout/header.css";
@@ -31,3 +31,4 @@ ordre d'import :
 @import "components/card.css";
 @import "components/carrousel.css";
 @import "components/info.css";
+@import "components/contact.css";

@@ -15,7 +15,7 @@
 }
 
 .menu__list {
-  margin-top: 25vh;
+  margin-top: 22vh;
   align-items: center;
 }
 
@@ -31,6 +31,7 @@
 
 .menu__hr{
   width: 310px;
+   margin-right: var(--space5x);
   border-bottom: 3px solid var(--noir);
   align-items: center;
 }
