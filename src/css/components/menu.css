@@ -43,7 +43,7 @@
   content: "";
   background-color: var(--noir);
   display: block;
-  height: 2px;
+  height: 3px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -56,4 +56,5 @@
 }
 .menu-btn__bar::after {
   top: 10px;
+
 
