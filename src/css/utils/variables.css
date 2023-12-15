@@ -18,6 +18,11 @@
 --button: 0.42rem;
 --small-text--uppercase: 0.31rem;
 --menu--item: 0.61rem;
+/*Police de caractère*/
+--josephin: 'Josephin Sans', sans-serif;
+--inter: 'Inter', sans-serif;
+--roboto: 'Roboto', sans-serif;
+--roboto--mono: 'Roboto Mono', monospace;
 
 /* Spaces */
   --space1x: 8px;

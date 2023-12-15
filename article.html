@@ -74,8 +74,8 @@
             à travers le monde.
         </p>
         <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
-            <button @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><=</button>
-                <button @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth"class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"> => </button>
+            <button @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><img class="carrousel_arrow" src="/public/img/icone/arrowLineLeft.svg" alt="arrow left"></button>
+                <button @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth"class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"> <img class="carrousel_arrow" src="/public/img/icone/arrowLineRight.svg" alt="arrow right"></button>
                     <div class="carrousel_parent-ecrans" x-ref="parent"@scroll.debounce.250ms.passive="hrefCourant='#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                         <div id="ecran-1" class="carrousel_ecran">
                             <figure>
@@ -108,13 +108,6 @@
                             </figure>
                         </div>
                     </div>
-                    <ul class="caroussel_liste-liens">
-                        <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">ecran 1</a></li>
-                        <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">ecran 2</a></li>
-                        <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">ecran 3</a></li>
-                        <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">ecran 4</a></li>
-                        <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">ecran 5</a></li>
-                    </ul>
         </div>
         
     </main>
