@@ -9,15 +9,15 @@
 --blanc: #FAFAFA;
 
 /* Text-size styles */
---h1--inter: 1rem;
---h2--josephin: 0.67rem;
---h3-josephin: 0.5rem;
---body-1: 0.42rem;
---body-2: 0.36rem;
---small--text: 0.31rem;
---button: 0.42rem;
---small-text--uppercase: 0.31rem;
---menu--item: 0.61rem;
+--h1: 36px;
+--h2: 42px;
+--h3: 18px;
+--body-1: 15px;
+--body-2: 13px;
+--small--text: 11px;
+--button: 15px;
+--small-text--uppercase: 11px;
+--menu--item: 22px;
 /*Police de caractère*/
 --josephin: 'Josephin Sans', sans-serif;
 --inter: 'Inter', sans-serif;

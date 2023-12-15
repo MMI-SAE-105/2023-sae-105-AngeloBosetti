@@ -23,11 +23,13 @@
 }
 
 .menu__link {
-  color: var(--black);
+  color: var(--noir);
   text-decoration: none;
 }
 
 .menu-btn {
+  decoration: none;
+  background-color: transparent;
   width: 30px;
   height: 30px;
   position: relative;
@@ -37,7 +39,7 @@
 .menu-btn__bar::before,
 .menu-btn__bar::after {
   content: "";
-  background-color: var(--black);
+  background-color: var(--noir);
   display: block;
   height: 2px;
   width: 100%;
@@ -52,4 +54,4 @@
 }
 .menu-btn__bar::after {
   top: 10px;
-}
+
