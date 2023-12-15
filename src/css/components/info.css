@@ -1,0 +1,8 @@
+.info__list{
+    background-color: var(--bleu-clair);
+    margin: 8px;
+}
+.info__item {
+    list-style-type: none;
+    padding: 8px;
+}
